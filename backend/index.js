@@ -101,7 +101,7 @@ app.post('/summarize', async (req, res) => {
 });
 // PUT /todos/:id – Update a todo item text
 // PUT /todos/:id - Update a todo
-a// PUT /todos/:id – Update a todo text
+// PUT /todos/:id – Update a todo text
 // PUT /todos/:id – Update a todo
 app.put('/todos/:id', async (req, res) => {
   const { id } = req.params;
