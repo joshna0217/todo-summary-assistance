@@ -26,7 +26,7 @@ todo-summary-assistant/
 │   ├── index.js            # API routes and server logic
 │   ├── package.json        # Backend dependencies
 │   └── .env                # Environment variables (not committed)
-├── src/                    # React frontend source code
+├── src/ --Frontend                   # React frontend source code
 ├── public/                 # Static frontend assets
 ├── package.json            # Frontend dependencies
 ├── .gitignore
@@ -43,10 +43,9 @@ cd todo-summary-assistant
 
 Create .env files from .env.example in both frontend/ and backend/
 PORT=5000
-SUPABASE_DB_URL=postgresql://postgres:Joshna%4017@db.bfzyvarqcbfvlztcqabj.supabase.co:5432/postgres
-COHERE_API_KEY=jnET8nBP5Lw7JndZR4F4gTMuSrOpUgf1zPsiYJyu
-SLACK_WEBHOOK_URL=https://hooks.slack.com/services/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
-
+SUPABASE_DB_URL= YOUR-id
+COHERE_API_KEY=YOUR-API_KEY
+SLACK_WEBHOOK_URL=YOUR_URL
 REACT_APP_API_URL=http://localhost:5000
 
 cd backend
@@ -55,13 +54,14 @@ cd ../frontend
 npm install
 cd backend
 npm start
+node index.js
 cd ../frontend
 npm start
 
 Netlify: Great for fast, hassle-free deployment of React frontends.
 
  Deliverables Summary
-✅ Source code (frontend + backend)
+✅ Source code (Frontend(src) + backend)
 
 ✅ .env.example for both environments
 
