@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# 📝 Todo Summary Assistant
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A full-stack application that helps you manage todos, summarize them using an LLM (Cohere), and send the summary to a Slack channel.
 
-## Available Scripts
+## 🚀 Live Demo
 
-In the project directory, you can run:
+[https://your-netlify-site.netlify.app](https://your-netlify-site.netlify.app)  
+> _(Update this with your actual deployed Netlify URL)_
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🧩 Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Create, update, and delete todos
+- Summarize all current todos using Cohere LLM
+- Automatically send the summary to a configured Slack channel
+- Clean and responsive UI built with React
+- Supabase as the backend database
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🏗 Tech Stack
 
-### `npm run build`
+todo-summary-assistant/
+├── backend/                # Express.js backend
+│   ├── index.js            # API routes and server logic
+│   ├── package.json        # Backend dependencies
+│   └── .env                # Environment variables (not committed)
+├── src/                    # React frontend source code
+├── public/                 # Static frontend assets
+├── package.json            # Frontend dependencies
+├── .gitignore
+├── README.md               # This file
+└── .env.example            # Example environment variables
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🛠 Setup Instructions
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 1. Clone the Repository
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+git clone 
+cd todo-summary-assistant
 
-### `npm run eject`
+Create .env files from .env.example in both frontend/ and backend/
+PORT=5000
+SUPABASE_DB_URL=postgresql://postgres:Joshna%4017@db.bfzyvarqcbfvlztcqabj.supabase.co:5432/postgres
+COHERE_API_KEY=jnET8nBP5Lw7JndZR4F4gTMuSrOpUgf1zPsiYJyu
+SLACK_WEBHOOK_URL=https://hooks.slack.com/services/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
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+REACT_APP_API_URL=http://localhost:5000
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+cd backend
+npm install
+cd ../frontend
+npm install
+cd backend
+npm start
+cd ../frontend
+npm start
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Netlify: Great for fast, hassle-free deployment of React frontends.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+ Deliverables Summary
+✅ Source code (frontend + backend)
 
-## Learn More
+✅ .env.example for both environments
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+✅ Slack & LLM integration
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+✅ UI with todo editing, deleting, adding
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+✅ Live frontend deployment (Netlify)
