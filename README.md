@@ -4,7 +4,7 @@ A full-stack application that helps you manage todos, summarize them using an LL
 
 ## 🚀 Live Demo
 
-[https://your-netlify-site.netlify.app](https://your-netlify-site.netlify.app)  
+https://todo-summary-assistance.netlify.app/  
 > _(Update this with your actual deployed Netlify URL)_
 
 ---
